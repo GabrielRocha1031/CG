@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toto Beer House</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="css/design.css" type="text/css">
+<script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/m3.js"></script>
+<script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+<script src="js/carrinho.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+
+<!-- Top menu -->
+<div class="topmenu">
+    <div class="carrinhotopmenu">
+      <a href="carrinho.html"><img src="img/carrinho.png" width="60" height="50" class="media-object  img-responsive img-thumbnail"></a>
+      <div class="contadorcarrinhotopmenu">
+        <p style="border-radius: 50%;background: lightblue;width: 20px;height: 20px;text-align: center;"><span id="mostracarrinho"></span></p>
+      </div>
+    </div>
+      
+    <div class="nometopmenu">
+      <input type="image" src="img/logo.png" width="130" height="110">  
+    </div>
+</div>
+  
+
+<!-- !PAGE CONTENT! -->
+<div class="corpo" style="max-width:1200px;max-width:100%">
+
+  <!-- First Photo Grid-->
+  <div class="cervejas" id="cervejas">
+    <div class="groupcervejas">
+      <div class="painel">
+
+        <canvas id="canvas"></canvas>
+        <script src="js/index.js"></script>
+        <div class="slidecontainer">
+          <button onclick="rotationL()"> << </button>
+          <button onclick="lesszoom()">zoom -</button>
+          <button onclick="adicionapilsen()">Comprar</button>
+          <button onclick="morezoom()">zoom +</button>
+          <button onclick="rotationR()"> >> </button>
+        </div>
+        <h3>Premium Pilsen</h3>
+        <p>Tendo a sua receita com apenas 4 ingredientes: água, lúpulo, levedura e malte de cevada. 
+          Ela é dourada, translúcida, leve e com uma espuma cremosa. 
+          A cerveja Toto Premium Pilsen possui um amargor moderado 30 IBU,
+          combinando perfeitamente com um churrasco de CG.</p>
+      </div>
+      <div class="painel">
+        <canvas id="canvas2"></canvas>
+        <script src="js/index2.js"></script>
+        <div class="slidecontainer">
+          <button onclick="rotationL2()"> << </button>
+          <button onclick="lesszoom2()">zoom -</button>
+          <button onclick="adicionapuromalte()">Comprar</button>
+          <button onclick="morezoom2()">zoom +</button>
+          <button onclick="rotationR2()"> >> </button>
+        </div>
+        <h3>Super Puro Malte</h3>
+        <p>A Super Puro Malte é uma cerveja leve e refrescante, bem equilibrada e fácil de beber. 
+          O aroma é marcado por notas herbais e florais do lúpulo Saaz, oriundo da República Tcheca.</p>
+      </div>
+      <div class="painel">
+        <canvas id="canvas3"></canvas>
+        <script src="js/index3.js"></script>
+        <div class="slidecontainer">
+          <button onclick="rotationL3()"> << </button>
+          <button onclick="lesszoom3()">zoom -</button>
+          <button onclick="adicionaweiss()">Comprar</button>
+          <button onclick="morezoom3()">zoom +</button>
+          <button onclick="rotationR3()"> >> </button>
+        </div>
+        <h3>Strong Weiss</h3>
+        <p>Apreciada pelos os mais sábios, a Strong Weiss é com uma mistura de maltes de trigo e de cevada, onde a proporção de trigo equivale a 50%. 
+          A maior presença de proteínas no trigo em comparação com a cevada confere maior turbidez e colarinhos duradouros à essa cerveja..</p>
+      </div>
+      <div class="painel">
+        <canvas id="canvas4"></canvas>
+        <script src="js/index4.js"></script>
+        <div class="slidecontainer">
+          <button onclick="rotationL4()"> << </button>
+          <button onclick="lesszoom4()">zoom -</button>
+          <button onclick="adicionastout()">Comprar</button>
+          <button onclick="morezoom4()">zoom +</button>
+          <button onclick="rotationR4()"> >> </button>
+        </div>
+        <h3>Classic Stout</h3>
+        <p>Originárias da Irlanda, criadas como uma opção para quem não gostava do sabor adocicado de cervejas populares na época. 
+          Elas são cervejas de cor escura, que contam com um aspecto forte, cremoso e encorpado, além do sabor característico do malte torrado e do café,
+          se tornando a cerveja preferida de quem faz Computação Gráfica.</p>
+      </div>
+      
+    </div>
+    <div class="sobreNos">
+      <div class="textSobreNos" style="display: flex;position: absolute;">
+        <p>A cervejaria Toto Beer House é um estabelecimento renomado que oferece uma ampla variedade de cervejas artesanais de alta qualidade. Localizada em um espaço moderno e acolhedor, a Toto Beer House oferece aos seus clientes uma experiência única e envolvente, onde podem desfrutar de uma grande seleção de cervejas produzidas localmente, bem como de cervejas importadas de todo o mundo.
+        A equipe da Toto Beer House é apaixonada por cervejas artesanais e está sempre disposta a compartilhar seu conhecimento e entusiasmo com seus clientes. Os funcionários estão sempre prontos para recomendar as melhores opções de cerveja para cada paladar, e estão sempre dispostos a responder qualquer dúvida ou curiosidade que os clientes possam ter sobre o mundo das cervejas artesanais.</p>
+      </div>
+      <div class="conteudoSobreNos">
+        <canvas id="canvas5" style="height: 850px;width: 600px;"></canvas>
+        <script src="js/index5.js"></script>
+      </div> 
+    </div> 
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="footercss">
+      <p style="text-align: center;top: 5px;">Trabalho 1 de CG<br>
+      Gabriel Rocha Silveira</p>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

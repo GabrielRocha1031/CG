@@ -1,0 +1,97 @@
+@import url("https://webglfundamentals.org/webgl/resources/webgl-tutorials.css");
+body {
+  margin: 0;
+}
+canvas {
+  background: transparent;
+  border: none;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 350px;
+}
+
+.painel{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  background-color: rgba(192,192,192,0.5);
+  text-align: center;
+}
+
+.cervejas{
+  background-image: url('../img/fundo.jpg');
+  background-position: top;
+  background-position: 0% 0%;
+}
+
+.groupcervejas{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.topmenu{
+  background-color: rgba(192,192,192,0.3);
+  width: 700px;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  left: 30%;
+}
+
+.carrinhotopmenu{
+  margin-left: 630px;
+
+}
+
+.contadorcarrinhotopmenu{
+  color: black;
+  top: 10px;
+  position: absolute;
+}
+
+.nometopmenu{
+  position: absolute;
+  top: -33px;
+  margin-left: 290px;
+}
+
+.sobreNos{
+  background-image: url('../img/fundoSobreNos.jpg');
+  background-position: 0% 0%;
+  height: 850px;
+  background-size: 1920px;
+  position:static;
+}
+
+.conteudoSobreNos{
+  margin-left: -950px;
+  background-color: rgba(192,192,192,0.3);
+
+}
+
+.textSobreNos{
+  margin: 100px;
+  text-align: center;
+  font-size: 24px;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.footercss{
+  color: black;
+  background-color: rgb(219, 212, 195);
+  height: 70px;
+  width: 100%;
+  background-position: 0% 0%;
+  margin-top: -20px;
+}
+
